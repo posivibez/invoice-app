@@ -1,0 +1,19 @@
+.layout {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.header {
+    background-color: $color-header-bg;
+    width: 100px;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    &__top {
+        position: relative;
+        background-color: $color-primary-blue;
+        height: 100px;
+    }
+}

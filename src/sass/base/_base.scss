@@ -1,0 +1,44 @@
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html {
+    max-width: 100%;
+    overflow-x: hidden;
+    //this defines what 1rem is
+    font-size: 62.5%;
+
+
+    @include respond(tab-land) { //1200px
+        font-size: 56.25%;
+    }
+
+    @include respond(tab-port) { //900px
+        font-size: 50%;
+          padding: 0rem;
+    }
+
+    @include respond(big-desktop) { //1800px
+        font-size: 66.25%;
+    }
+
+
+}
+
+body {
+    box-sizing: border-box;
+    // padding-top: $minheight-header;
+
+    // @include respond(tab-port) {
+    //     padding-top: $minheight-header-mobile;
+    // }
+}
+
+// ::selection {
+//     background-color: $color-primary;
+//     color: white;
+// }

@@ -1,0 +1,45 @@
+@mixin clearFix {
+    &::after {
+        content: "";
+        clear: both;
+        display: table;
+      }
+}
+
+// @mixin lightgrayHR {
+//   border: none;
+//   margin-top: 0.5rem;
+//   height: 1px;
+//   background-color: $color-typography-lightmediumgray;
+// }
+
+// @mixin boxshadowlight {
+//   box-shadow: 0 0 11px rgba(33,33,33,.1);
+// }
+
+// @mixin boxshadowheavy {
+//   box-shadow: 0 0 15px rgba(33,33,33,.2);
+// }
+
+@mixin respond($breakpoint) {
+  @if $breakpoint == phone {
+    @media (max-width: 600px) {
+      @content
+    }
+  };
+  @if $breakpoint == tab-port {
+    @media (max-width: 900px) {
+      @content
+    }
+  };
+  @if $breakpoint == tab-land {
+    @media (max-width: 1200px) {
+      @content
+    }
+  };
+  @if $breakpoint == big-desktop {
+    @media (min-width: 1800px) {
+      @content
+    }
+  };
+}

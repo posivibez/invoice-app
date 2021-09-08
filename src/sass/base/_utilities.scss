@@ -1,0 +1,115 @@
+// .u-center-text {
+//     text-align: center !important;
+// }
+
+// .u-margin-right-small {
+//     margin-right: $margin-small !important;
+// }
+
+// .u-margin-right-medium {
+//     margin-right: $margin-medium !important;
+// }
+
+// .u-margin-left-small {
+//     margin-left: $margin-small !important;
+// }
+
+// .u-margin-left-medium {
+//     margin-left: $margin-medium !important;
+// }
+
+// .u-margin-bottom-tiny {
+//     margin-bottom: $margin-tiny !important;
+// }
+
+// .u-margin-bottom-small {
+//     margin-bottom: $margin-small !important;
+// }
+
+// .u-margin-bottom-medium {
+//     margin-bottom: $margin-medium !important;
+// }
+
+// .u-margin-bottom-big,
+// .u-margin-bottom-huge {
+//     margin-bottom: $margin-big !important;
+// }
+
+// .u-margin-top-tiny {
+//     margin-top: $margin-tiny !important;
+// }
+
+// .u-margin-top-small {
+//     margin-top: $margin-small !important;
+// }
+
+// .u-margin-top-medium {
+//     margin-top: $margin-medium !important;
+// }
+    
+// .u-margin-top-big,
+// .u-margin-top-huge {
+//     margin-top: $margin-big !important;
+// }
+
+// .u-padding-top-small {
+//     padding-top: $margin-small !important;
+// }
+
+// .u-padding-top-medium {
+//     padding-top: $margin-medium !important;
+// }
+
+// .u-padding-bottom-small {
+//     padding-bottom: $margin-small !important;
+// }
+
+// .u-padding-top-bottom-big {
+//     padding: $margin-big 0 !important;
+// }
+
+// .u-standard-margins {
+//     padding: 0 $margin-horizontal !important;
+    
+//     @include respond(phone) {
+//         padding: 0 $margin-horizontal-mobile !important;
+//     }
+// }
+
+// .u-standard-section-spacing {
+//     margin: $margin-sections 0 !important;
+
+//     @include respond(phone) {
+//         margin: $margin-sections-mobile 0 !important;
+//     }
+// }
+
+// .u-standard-section-margins {
+//     padding: $margin-sections $margin-horizontal !important;
+
+//     @include respond(phone) {
+//         padding: $margin-sections-mobile $margin-horizontal-mobile !important;
+//     }
+// }
+
+.u-vis-hide {
+    visibility: hidden !important;
+}
+
+.u-display-none-mobile {
+    @include respond(phone) {
+        display: none;
+    }   
+}
+
+.u-display-none-tablet {
+    @include respond(tab-port) {
+        display: none;
+    }   
+}
+
+.u-display-none-desktop {
+    @media (min-width: 900px) {
+        display: none;
+      }
+}
